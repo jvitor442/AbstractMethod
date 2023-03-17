@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ficha de pedidos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="jquery-1.11.0.min.js">
+		
+	</script>
+	<script src="FactoryMethod.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<h1>Ficha de pedidos</h1><br>
+	<label for="SeuNome">Nome: </label>
+	<input type="text" id="SeuNome"><br><br>
+	<label for="repre">Representante: </label>
+	<select id="repre">
+		<option value="administrador">Administrador</option>
+		<option value="aluno" >Aluno</option>
+        <option value="diretor">Diretor</option>
+		<option value="professor">Professor</option>
+		<option value="coordenador">Coordenador</option>
+	</select><br><br>
+	<button onclick="validacao()">Registrar</button><br><br>
+	<p id="consulta"></p><br>
+	<hr>
+
+	<div id="lanches">
+		<h1>Monte seu lanche conforme o cardápio: </h1><br>
+		<fieldset>
+		  <legend>Escolha o pão: </legend>
+		  <label for="r1">Brioche</label>
+		  <input type="radio" name="r1" id="r1">
+		  <br>
+		  <label for="r2">Parmesão</label>
+		  <input type="radio" name="r1" id="r2">
+		  <br>
+		  <label for="r3">Francês</label>
+		  <input type="radio" name="r1" id="r3">
+		</fieldset>
+		</select><br>
+
+		<fieldset>
+			<legend>Escolha seu tipo de Carne: </legend>
+			<label for="checkbox-1">Frango</label>
+			<input type="checkbox" name="checkbox-1" id="box1"><br>
+			<label for="checkbox-2">Linguiça</label>
+			<input type="checkbox" name="checkbox-2" id="box2"><br>
+			<label for="checkbox-3">Carne</label>
+			<input type="checkbox" name="checkbox-3" id="box3"><br>
+			<label for="checkbox-4">Vegetariana</label>
+			<input type="checkbox" name="checkbox-4" id="box4"><br>
+		</fieldset>
+			 <br>
+
+
+		<fieldset>
+			<legend>Escolha seu tipo de Queijo: </legend>
+			<label for="checkbox-1">Muçarela</label>
+			<input type="checkbox" name="checkbox-1" id="box5"><br>
+			<label for="checkbox-2">Suiço</label>
+			<input type="checkbox" name="checkbox-2" id="box6"><br>
+			<label for="checkbox-3">Cheddar</label>
+			<input type="checkbox" name="checkbox-3" id="box7"><br>
+			</fieldset>
+              <br>
+		<fieldset>
+			<legend>Escolha seu os Molhos: </legend>
+			<label for="checkbox-1">Barbecue</label>
+			<input type="checkbox" name="checkbox-1" id="box8"><br>
+			<label for="checkbox-2">Maionese Verde</label>
+			<input type="checkbox" name="checkbox-2" id="box9"><br>
+			<label for="checkbox-3">Tártaro</label>
+			<input type="checkbox" name="checkbox-3" id="box10"><br>
+		</fieldset>
+			<br>
+		<fieldset>
+			<legend>Escolha seu Vegetais: </legend>
+			<label for="checkbox-1">Tomate</label>
+			<input type="checkbox" name="checkbox-1" id="box11"><br>
+			<label for="checkbox-2">Alface</label>
+			<input type="checkbox" name="checkbox-2" id="box12"><br>
+			<label for="checkbox-3">Azeitona</label>
+			<input type="checkbox" name="checkbox-3" id="box13"><br>
+		</fieldset>
+			<br>
+		<fieldset>
+			<legend>Escolha seu acompanhamento: </legend>
+			<label for="checkbox-1">Batata</label>
+			<input type="checkbox" name="checkbox-1" id="box14"><br>
+			<label for="checkbox-2">Sorvete</label>
+			<input type="checkbox" name="checkbox-2" id="box15"><br>
+			<label for="checkbox-3">Iogurte</label>
+			<input type="checkbox" name="checkbox-3" id="box16"><br>
+		</fieldset>
+			<br>
+		<button id="Pedido">Fazer pedido</button>
+		<button id="cancelamento">Cancelar</button>
+		<p id="mensagem"></p>
+		
+	</div>
+	</div>
+
+</body>
+</html>
